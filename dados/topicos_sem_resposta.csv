@@ -1,0 +1,113 @@
+﻿categoria,area_estudo,qtd_topicos
+Multiplataforma,Mobile,18
+Flutter,Mobile,1
+Android,Mobile,12
+iOS,Mobile,5
+Jogos,Mobile,1
+Lógica de programação,Programação,71
+Python,Programação,15
+Node.JS,Programação,73
+Python web,Programação,63
+Java para Web,Programação,167
+Java,Programação,19
+Java e persistência,Programação,34
+Java API,Programação,139
+Kotlin,Programação,9
+Testes em Java,Programação,33
+Boas práticas em Java,Programação,14
+Certificação Java,Programação,0
+C#,Programação,87
+.NET para web,Programação,90
+Persistência com .NET,Programação,27
+.NET API,Programação,33
+Testes em C#,Programação,28
+Boas práticas em C#,Programação,11
+Certificação C#,Programação,40
+VB.NET,Programação,32
+PHP,Programação,39
+PHP para web,Programação,48
+Persistência em PHP,Programação,4
+PHP API,Programação,4
+Boas práticas em PHP,Programação,5
+Ruby,Programação,15
+Ruby on Rails,Programação,10
+Desenvolvimento de jogos,Programação,104
+Clojure,Programação,18
+GoLang,Programação,6
+Linguagem C e C++,Programação,33
+Computação,Programação,57
+Cobol e ABAP,Programação,28
+HTML e CSS,Front-end,12
+React,Front-end,1
+Angular,Front-end,7
+JavaScript,Front-end,20
+Frameworks MVC,Front-end,0
+Automação e Performance,Front-end,2
+jQuery,Front-end,4
+WordPress,Front-end,11
+Linux,DevOps,11
+Google Cloud Platform,DevOps,32
+Segurança,DevOps,15
+Containers,DevOps,9
+Infraestrutura como Código,DevOps,7
+Builds e Controle de versão,DevOps,5
+Cloud Computing,DevOps,112
+Entrega Contínua,DevOps,34
+Mensageria/Streams,DevOps,34
+Internet das coisas,DevOps,12
+Embarcados e Robótica,DevOps,9
+Redes,DevOps,26
+CCNA exame 100-105,DevOps,15
+Windows,DevOps,13
+UI - User Interface,UX & Design,12
+UX - User Experience,UX & Design,87
+Design Gráfico,UX & Design,21
+Edição de Vídeo,UX & Design,14
+3D,UX & Design,11
+Motion Design,UX & Design,9
+Design de Jogos,UX & Design,2
+Design de Ilustração,UX & Design,1
+Pintura Digital,UX & Design,4
+Fotografia,UX & Design,3
+Produção e Pós-produção de Áudio,UX & Design,6
+Marketing,Marketing Digital,34
+SEO,Marketing Digital,30
+Mídia Paga,Marketing Digital,14
+Conteúdo,Marketing Digital,9
+Social Media,Marketing Digital,13
+Marketing Analytics,Marketing Digital,23
+YouTube,Marketing Digital,1
+SQL e Banco de Dados,Data Science,22
+Engenharia de Dados,Data Science,2
+Data Science,Data Science,160
+Data Visualization,Data Science,9
+Machine Learning,Data Science,168
+Excel,Data Science,28
+Business Intelligence,Data Science,9
+NoSQL,Data Science,15
+Matemática,Data Science,2
+Estatística,Data Science,147
+Métodos Ágeis,Inovação & Gestão,59
+Gestão Estratégica,Inovação & Gestão,25
+Gestão Ágil,Inovação & Gestão,26
+Transformação Ágil,Inovação & Gestão,22
+Negociação e Comunicação,Inovação & Gestão,54
+Produtividade e Qualidade de Vida,Inovação & Gestão,5
+Governança Organizacional,Inovação & Gestão,4
+E-commerce,Inovação & Gestão,27
+Gestão da Qualidade,Inovação & Gestão,10
+Liderança e Gestão de Equipes,Inovação & Gestão,11
+Habilidades Interpessoais,Inovação & Gestão,8
+Ferramentas de Apoio à Gestão,Inovação & Gestão,22
+Certificação PMP e CAPM,Inovação & Gestão,19
+Certificação ITIL Foundation v3,Inovação & Gestão,20
+Certificação ITIL Foundation 4,Inovação & Gestão,0
+COBIT 5 Foundations,Inovação & Gestão,3
+Modelagem e Processos de Negócios,Inovação & Gestão,25
+Gestão de Produtos,Inovação & Gestão,15
+Startups e Empreendedorismo,Inovação & Gestão,14
+Vendas,Inovação & Gestão,21
+Práticas de Gestão - Waterfall & Híbridas,Inovação & Gestão,3
+Marketing Pessoal,Inovação & Gestão,5
+Conformidade Legal,Inovação & Gestão,0
+Certificações ANBIMA,Inovação & Gestão,18
