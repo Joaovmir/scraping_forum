@@ -1,22 +1,23 @@
 ﻿categoria,area_estudo,qtd_topicos
 Multiplataforma,Mobile,23
 Flutter,Mobile,0
-Android,Mobile,3
+Android,Mobile,2
 iOS,Mobile,7
 Jogos,Mobile,3
-Lógica de programação,Programação,89
-Python,Programação,36
+Sem subcategoria - Mobile,Mobile,1
+Lógica de programação,Programação,86
+Python,Programação,35
 Node.JS,Programação,85
-Python web,Programação,65
+Python web,Programação,66
 Java para Web,Programação,180
-Java,Programação,15
-Java e persistência,Programação,38
+Java,Programação,16
+Java e persistência,Programação,39
 Java API,Programação,142
 Kotlin,Programação,8
 Testes em Java,Programação,36
 Boas práticas em Java,Programação,17
 Certificação Java,Programação,0
-C#,Programação,88
+C#,Programação,89
 .NET para web,Programação,90
 Persistência com .NET,Programação,27
 .NET API,Programação,31
@@ -24,34 +25,36 @@ Testes em C#,Programação,30
 Boas práticas em C#,Programação,11
 Certificação C#,Programação,41
 VB.NET,Programação,35
-PHP,Programação,40
+PHP,Programação,41
 PHP para web,Programação,60
 Persistência em PHP,Programação,5
 PHP API,Programação,5
 Boas práticas em PHP,Programação,5
 Ruby,Programação,16
-Ruby on Rails,Programação,11
+Ruby on Rails,Programação,9
 Desenvolvimento de jogos,Programação,108
 Clojure,Programação,19
 GoLang,Programação,9
 Linguagem C e C++,Programação,35
-Computação,Programação,59
+Computação,Programação,60
 Cobol e ABAP,Programação,27
+Sem subcategoria - Programação,Programação,210
 HTML e CSS,Front-end,14
 React,Front-end,3
-Angular,Front-end,3
-JavaScript,Front-end,8
+Angular,Front-end,4
+JavaScript,Front-end,10
 Frameworks MVC,Front-end,1
 Automação e Performance,Front-end,2
-jQuery,Front-end,2
+jQuery,Front-end,3
 WordPress,Front-end,20
+Sem subcategoria - Front-end,Front-end,3
 Linux,DevOps,10
 Google Cloud Platform,DevOps,36
 Segurança,DevOps,15
-Containers,DevOps,13
+Containers,DevOps,12
 Infraestrutura como Código,DevOps,7
 Builds e Controle de versão,DevOps,8
-Cloud Computing,DevOps,120
+Cloud Computing,DevOps,122
 Entrega Contínua,DevOps,36
 Mensageria/Streams,DevOps,35
 Internet das coisas,DevOps,12
@@ -59,10 +62,11 @@ Embarcados e Robótica,DevOps,10
 Redes,DevOps,29
 CCNA exame 100-105,DevOps,15
 Windows,DevOps,13
+Sem subcategoria - DevOps,DevOps,35
 UI - User Interface,UX & Design,11
-UX - User Experience,UX & Design,34
+UX - User Experience,UX & Design,30
 Design Gráfico,UX & Design,15
-Edição de Vídeo,UX & Design,10
+Edição de Vídeo,UX & Design,11
 3D,UX & Design,8
 Motion Design,UX & Design,9
 Design de Jogos,UX & Design,1
@@ -70,29 +74,32 @@ Design de Ilustração,UX & Design,1
 Pintura Digital,UX & Design,5
 Fotografia,UX & Design,4
 Produção e Pós-produção de Áudio,UX & Design,11
+Sem subcategoria - UX & Design,UX & Design,2
+SQL e Banco de Dados,Data Science,18
+Engenharia de Dados,Data Science,1
+Data Science,Data Science,159
+Data Visualization,Data Science,0
+Machine Learning,Data Science,175
+Excel,Data Science,28
+Business Intelligence,Data Science,9
+NoSQL,Data Science,15
+Matemática,Data Science,0
+Estatística,Data Science,105
+Sem subcategoria - Data Science,Data Science,82
 Marketing,Marketing Digital,42
 SEO,Marketing Digital,31
 Mídia Paga,Marketing Digital,14
 Conteúdo,Marketing Digital,11
 Social Media,Marketing Digital,16
-Marketing Analytics,Marketing Digital,23
+Marketing Analytics,Marketing Digital,24
 YouTube,Marketing Digital,1
-SQL e Banco de Dados,Data Science,18
-Engenharia de Dados,Data Science,1
-Data Science,Data Science,158
-Data Visualization,Data Science,0
-Machine Learning,Data Science,175
-Excel,Data Science,29
-Business Intelligence,Data Science,8
-NoSQL,Data Science,15
-Matemática,Data Science,0
-Estatística,Data Science,104
+Sem subcategoria - Marketing Digital,Marketing Digital,10
 Métodos Ágeis,Inovação & Gestão,78
 Gestão Estratégica,Inovação & Gestão,27
 Gestão Ágil,Inovação & Gestão,26
 Transformação Ágil,Inovação & Gestão,23
 Negociação e Comunicação,Inovação & Gestão,7
-Produtividade e Qualidade de Vida,Inovação & Gestão,11
+Produtividade e Qualidade de Vida,Inovação & Gestão,12
 Governança Organizacional,Inovação & Gestão,4
 E-commerce,Inovação & Gestão,27
 Gestão da Qualidade,Inovação & Gestão,11
@@ -111,11 +118,4 @@ Práticas de Gestão - Waterfall & Híbridas,Inovação & Gestão,2
 Marketing Pessoal,Inovação & Gestão,13
 Conformidade Legal,Inovação & Gestão,0
 Certificações ANBIMA,Inovação & Gestão,18
-Sem subcategoria - Mobile,Mobile,1
-Sem subcategoria - Programação,Programação,210
-Sem subcategoria - Front-end,Front-end,2
-Sem subcategoria - DevOps,DevOps,35
-Sem subcategoria - UX & Design,UX & Design,2
-Sem subcategoria - Marketing Digital,Marketing Digital,10
-Sem subcategoria - Data Science,Data Science,82
 Sem subcategoria - Inovação & Gestão,Inovação & Gestão,5
