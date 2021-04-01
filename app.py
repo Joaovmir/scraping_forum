@@ -114,6 +114,12 @@ def mostra_areas_estudo():
 def mostra_areas_estudo_tabela():
     st.dataframe(tabela_areas_estudo)
 
+def mostra_dados(filtro):
+    if filtro == 'Geral':
+        st.dataframe(dados)
+    else:
+        st.dataframe(dados[dados['Área de estudo'] == filtro])
+
 st.title('Scraping Fórum Alura')
 base_dados = st.selectbox('De onde deseja carregar os dados?', ['Usar última base de dados','Realizar novo scraping (2 min carregamento)'])
 
@@ -126,7 +132,7 @@ elif base_dados == 'Usar última base de dados':
     dados.columns = ['Categoria', 'Área de estudo', 'Tópicos sem resposta']
     tabela_areas_estudo = dados.groupby('Área de estudo').sum().sort_values(by='Tópicos sem resposta',ascending=False)
 
-opcao = st.sidebar.selectbox('O que deseja ver?', ['Áreas de estudo', 'Subcategorias'])
+opcao = st.sidebar.selectbox('O que deseja ver?', ['Áreas de estudo', 'Subcategorias','Todos os dados'])
 
 if opcao == 'Subcategorias':
     quantidade = int(st.sidebar.selectbox('Escolha a quantidade de subcategorias', list(range(5,21))))
@@ -139,3 +145,9 @@ elif opcao == 'Áreas de estudo':
     figura2 = mostra_areas_estudo()
     st.pyplot(figura2)
     mostra_areas_estudo_tabela()
+elif opcao == 'Todos os dados':
+    st.text('Tópicos sem resposta por subcategoria')
+    filtros = list(dados['Área de estudo'].unique())
+    filtros.insert(0, 'Geral')
+    filtragem = st.selectbox('Filtros', filtros)
+    mostra_dados(filtragem)
