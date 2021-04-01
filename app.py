@@ -119,12 +119,12 @@ base_dados = st.selectbox('De onde deseja carregar os dados?', ['Usar última ba
 
 if base_dados == 'Realizar novo scraping (2 min carregamento)':
     dados = scraping_dados()
+    dados.columns = ['Categoria', 'Área de estudo', 'Tópicos sem resposta']
     tabela_areas_estudo = dados.groupby('Área de estudo').sum().sort_values(by='Tópicos sem resposta',ascending=False)
 elif base_dados == 'Usar última base de dados':
     dados = carrega_csv()
+    dados.columns = ['Categoria', 'Área de estudo', 'Tópicos sem resposta']
     tabela_areas_estudo = dados.groupby('Área de estudo').sum().sort_values(by='Tópicos sem resposta',ascending=False)
-
-dados.columns = ['Categoria', 'Área de estudo', 'Tópicos sem resposta']
 
 opcao = st.sidebar.selectbox('O que deseja ver?', ['Áreas de estudo', 'Subcategorias'])
 
