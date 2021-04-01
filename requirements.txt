@@ -1,0 +1,7 @@
+requests
+json
+pandas
+matplotlib
+seaborn
+urllib
+bs4
