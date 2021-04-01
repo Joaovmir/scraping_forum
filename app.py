@@ -84,11 +84,11 @@ def carrega_csv():
     return dados
 
 def mostra_top(qtd):
-    dados.sort_values(by= 'qtd_topicos', ascending=False, inplace=True)
+    dados.sort_values(by= 'Tópicos sem resposta', ascending=False, inplace=True)
 
     sns.set_style('darkgrid')
     sns.set_context("notebook", font_scale=1.2)
-    ax = sns.barplot(x= 'categoria', y='qtd_topicos', data = dados.head(qtd))
+    ax = sns.barplot(x= 'Categoria', y='Tópicos sem resposta', data = dados.head(qtd))
     ax.figure.set_size_inches(14,6)
     ax.set_title('Subcategorias com mais tópicos sem resposta', fontsize = 18)
     ax.set_ylabel('Quantidade', fontsize = 14)
@@ -103,7 +103,7 @@ def mostra_top_qtd(qtd):
 def mostra_areas_estudo():
     sns.set_style('darkgrid')
     sns.set_context("notebook", font_scale=1.2)
-    ax = sns.barplot(x= tabela_areas_estudo.index, y='qtd_topicos', data = tabela_areas_estudo)
+    ax = sns.barplot(x= tabela_areas_estudo.index, y='Tópicos sem resposta', data = tabela_areas_estudo)
     ax.figure.set_size_inches(14,6)
     ax.set_title('Tópicos sem resposta por área de estudo', fontsize = 18)
     ax.set_ylabel('Quantidade', fontsize = 14)
@@ -119,10 +119,12 @@ base_dados = st.selectbox('De onde deseja carregar os dados?', ['Usar última ba
 
 if base_dados == 'Realizar novo scraping (2 min carregamento)':
     dados = scraping_dados()
-    tabela_areas_estudo = dados.groupby('area_estudo').sum().sort_values(by='qtd_topicos',ascending=False)
+    tabela_areas_estudo = dados.groupby('Área de estudo').sum().sort_values(by='Tópicos sem resposta',ascending=False)
 elif base_dados == 'Usar última base de dados':
     dados = carrega_csv()
-    tabela_areas_estudo = dados.groupby('area_estudo').sum().sort_values(by='qtd_topicos',ascending=False)
+    tabela_areas_estudo = dados.groupby('Área de estudo').sum().sort_values(by='Tópicos sem resposta',ascending=False)
+
+dados.columns = ['Categoria', 'Área de estudo', 'Tópicos sem resposta']
 
 opcao = st.sidebar.selectbox('O que deseja ver?', ['Áreas de estudo', 'Subcategorias'])
 
