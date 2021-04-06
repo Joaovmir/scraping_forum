@@ -1,7 +1,7 @@
 requests
 json
+matplotlib
 pandas
-matplotlib.pyplot
 seaborn
-urllib.request
+urllib
 bs4
