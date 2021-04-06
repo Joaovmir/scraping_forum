@@ -1,6 +1,6 @@
 requests
 json
-matplotlib
+matplotlib==3.4.1
 pandas
 seaborn
 urllib
