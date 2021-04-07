@@ -10,7 +10,6 @@ import seaborn as sns
 from urllib.request import urlopen, Request
 from bs4 import BeautifulSoup
 
-@st.cache
 def scraping_dados():
     url_api = 'https://cursos.alura.com.br/api/categorias'
     req = requests.get(url_api)
