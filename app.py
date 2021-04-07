@@ -120,7 +120,7 @@ def mostra_dados(filtro):
 st.title('Scraping Fórum Alura')
 base_dados = st.selectbox('De onde deseja carregar os dados?', ['Usar última base de dados','Realizar novo scraping (2 min carregamento)'])
 
-st.set_option({backgroundColor:'dark'})
+st.set_option(backgroundColor, 'dark')
 
 if base_dados == 'Realizar novo scraping (2 min carregamento)':
     dados = scraping_dados()
@@ -134,7 +134,7 @@ elif base_dados == 'Usar última base de dados':
 opcao = st.sidebar.selectbox('O que deseja ver?', ['Áreas de estudo', 'Subcategorias','Todos os dados'])
 
 if opcao == 'Subcategorias':
-    quantidade = int(st.sidebar.select_slider('Escolha a quantidade de subcategorias', list(range(5,21))))
+    quantidade = st.sidebar.slider('Escolha a quantidade de subcategorias', 5, 20, 5)
     st.subheader(f'Tópicos sem resposta por subcategoria - Top {quantidade}')
     figura1 = mostra_top(quantidade)
     st.pyplot(figura1)
