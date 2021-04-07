@@ -88,7 +88,7 @@ def mostra_top(qtd):
 
     sns.set_style('darkgrid')
     sns.set_context("notebook", font_scale=1.2)
-    ax = sns.barplot(x='Tópicos sem resposta',y= 'Categoria', data = dados.head(qtd), hue = 'Área de estudo')
+    ax = sns.barplot(x='Tópicos sem resposta',y= 'Categoria', data = dados.head(qtd))
     ax.figure.set_size_inches(14,6)
     ax.set_title('Subcategorias com mais tópicos sem resposta', fontsize = 18)
     ax.set_xlabel('Quantidade', fontsize = 14)
