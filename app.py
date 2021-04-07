@@ -79,6 +79,7 @@ def scraping_dados():
     # dados.to_csv(os.path.join('dados', 'topicos_sem_resposta.csv'), sep = ',', index = False,encoding='utf-8-sig')
     return dados
 
+@st.cache
 def carrega_csv():
     dados = pd.read_csv(os.path.join('dados', 'topicos_sem_resposta.csv'), encoding='utf-8-sig')
     return dados
