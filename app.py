@@ -88,12 +88,11 @@ def mostra_top(qtd):
 
     sns.set_style('darkgrid')
     sns.set_context("notebook", font_scale=1.2)
-    ax = sns.barplot(x= 'Categoria', y='Tópicos sem resposta', data = dados.head(qtd))
+    ax = sns.barplot(x='Tópicos sem resposta',y= 'Categoria', data = dados.head(qtd))
     ax.figure.set_size_inches(14,6)
     ax.set_title('Subcategorias com mais tópicos sem resposta', fontsize = 18)
-    ax.set_ylabel('Quantidade', fontsize = 14)
-    ax.set_xlabel('Categoria', fontsize = 14)
-    plt.xticks(rotation=30)
+    ax.set_xlabel('Quantidade', fontsize = 14)
+    ax.set_ylabel('Categoria', fontsize = 14)
     return ax.figure
 
 def mostra_top_qtd(qtd):
@@ -103,12 +102,11 @@ def mostra_top_qtd(qtd):
 def mostra_areas_estudo():
     sns.set_style('darkgrid')
     sns.set_context("notebook", font_scale=1.2)
-    ax = sns.barplot(x= tabela_areas_estudo.index, y='Tópicos sem resposta', data = tabela_areas_estudo)
+    ax = sns.barplot(x='Tópicos sem resposta', y= tabela_areas_estudo.index,  data = tabela_areas_estudo)
     ax.figure.set_size_inches(14,6)
     ax.set_title('Tópicos sem resposta por área de estudo', fontsize = 18)
-    ax.set_ylabel('Quantidade', fontsize = 14)
-    ax.set_xlabel('Categoria', fontsize = 14)
-    plt.xticks(rotation=30)
+    ax.set_xlabel('Quantidade', fontsize = 14)
+    ax.set_ylabel('Categoria', fontsize = 14)
     return ax.figure
 
 def mostra_areas_estudo_tabela():
