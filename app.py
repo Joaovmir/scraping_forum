@@ -75,12 +75,12 @@ def scraping_dados():
         dados.append(linha)
         
     dados = pd.DataFrame(dados)
-    dados.to_csv('dados/topicos_sem_resposta.csv', sep = ',', index = False,encoding='utf-8-sig')
+    dados.to_csv('./tmp/dados/topicos_sem_resposta.csv', sep = ',', index = False,encoding='utf-8-sig')
     return dados
 
 @st.cache 
 def carrega_csv():
-    dados = pd.read_csv('dados/topicos_sem_resposta.csv', encoding='utf-8-sig')
+    dados = pd.read_csv('./tmp/dados/topicos_sem_resposta.csv', encoding='utf-8-sig')
     return dados
 
 def mostra_top(qtd):
