@@ -122,6 +122,8 @@ def mostra_dados(filtro):
 st.title('Scraping Fórum Alura')
 base_dados = st.selectbox('De onde deseja carregar os dados?', ['Usar última base de dados','Realizar novo scraping (2 min carregamento)'])
 
+
+
 if base_dados == 'Realizar novo scraping (2 min carregamento)':
     dados = scraping_dados()
     dados.columns = ['Categoria', 'Área de estudo', 'Tópicos sem resposta']
@@ -150,3 +152,6 @@ elif opcao == 'Todos os dados':
     filtros.insert(0, 'Geral')
     filtragem = st.selectbox('Filtros', filtros)
     mostra_dados(filtragem)
+
+if st.sidebar.button("Limpar cache"):
+    st.caching.clear_cache()
