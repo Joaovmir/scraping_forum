@@ -1,6 +1,5 @@
 import streamlit as st
 
-import os
 import requests
 import json
 import pandas as pd
@@ -76,12 +75,11 @@ def scraping_dados():
         dados.append(linha)
         
     dados = pd.DataFrame(dados)
-    # dados.to_csv(os.path.join('dados', 'topicos_sem_resposta.csv'), sep = ',', index = False,encoding='utf-8-sig')
     return dados
 
 @st.cache 
 def carrega_csv():
-    dados = pd.read_csv(os.path.join('dados', 'topicos_sem_resposta.csv'), encoding='utf-8-sig')
+    dados = pd.read_csv('dados/topicos_sem_resposta.csv', encoding='utf-8-sig')
     return dados
 
 def mostra_top(qtd):
