@@ -10,6 +10,7 @@ import seaborn as sns
 from urllib.request import urlopen, Request
 from bs4 import BeautifulSoup
 
+@st.cache
 def scraping_dados():
     url_api = 'https://cursos.alura.com.br/api/categorias'
     req = requests.get(url_api)
@@ -75,7 +76,7 @@ def scraping_dados():
         dados.append(linha)
         
     dados = pd.DataFrame(dados)
-    dados.to_csv(os.path.join('dados', 'topicos_sem_resposta.csv'), sep = ',', index = False,encoding='utf-8-sig')
+    # dados.to_csv(os.path.join('dados', 'topicos_sem_resposta.csv'), sep = ',', index = False,encoding='utf-8-sig')
     return dados
 
 @st.cache 
