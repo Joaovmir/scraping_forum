@@ -120,7 +120,7 @@ def mostra_dados(filtro):
 st.title('Scraping Fórum Alura')
 base_dados = st.selectbox('De onde deseja carregar os dados?', ['Usar última base de dados','Realizar novo scraping (2 min carregamento)'])
 
-st.set_option(backgroundColor, 'dark')
+st.set_option('backgroundColor', 'dark')
 
 if base_dados == 'Realizar novo scraping (2 min carregamento)':
     dados = scraping_dados()
