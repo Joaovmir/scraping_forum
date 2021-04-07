@@ -75,7 +75,7 @@ def scraping_dados():
         dados.append(linha)
         
     dados = pd.DataFrame(dados)
-    dados.to_csv('/dados/topicos_sem_resposta.csv', sep = ',', index = False,encoding='utf-8-sig')
+    dados.to_csv('dados/topicos_sem_resposta.csv', sep = ',', index = False,encoding='utf-8-sig')
     return dados
 
 @st.cache 
