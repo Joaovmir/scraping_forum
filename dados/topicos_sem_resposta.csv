@@ -1,121 +1,120 @@
 ﻿categoria,area_estudo,qtd_topicos
-Multiplataforma,Mobile,23
-Flutter,Mobile,0
+Multiplataforma,Mobile,21
+Flutter,Mobile,4
 Android,Mobile,5
-iOS,Mobile,9
+iOS,Mobile,11
 Jogos,Mobile,3
-Sem subcategoria - Mobile,Mobile,4
-Lógica de programação,Programação,68
-Python,Programação,32
-Node.JS,Programação,86
-Python web,Programação,67
-Java para Web,Programação,180
-Java,Programação,20
-Java e persistência,Programação,37
-Java API,Programação,144
+Sem subcategoria - Mobile,Mobile,1
+Lógica de programação,Programação,105
+Python,Programação,45
+Node.JS,Programação,90
+Python web,Programação,72
+Java para Web,Programação,178
+Java,Programação,17
+Java e persistência,Programação,39
+Java API,Programação,145
 Kotlin,Programação,8
-Testes em Java,Programação,36
-Boas práticas em Java,Programação,17
-Certificação Java,Programação,0
-C#,Programação,84
-.NET para web,Programação,92
+Testes em Java,Programação,38
+Boas práticas em Java,Programação,18
+Certificação Java,Programação,2
+C#,Programação,90
+.NET para web,Programação,90
 Persistência com .NET,Programação,27
-.NET API,Programação,33
-Testes em C#,Programação,30
+.NET API,Programação,32
+Testes em C#,Programação,31
 Boas práticas em C#,Programação,11
-Certificação C#,Programação,42
-VB.NET,Programação,35
-PHP,Programação,37
-PHP para web,Programação,49
-Persistência em PHP,Programação,3
+Certificação C#,Programação,43
+VB.NET,Programação,38
+PHP,Programação,36
+PHP para web,Programação,51
+Persistência em PHP,Programação,5
 PHP API,Programação,4
 Boas práticas em PHP,Programação,6
-Ruby,Programação,17
-Ruby on Rails,Programação,9
-Desenvolvimento de jogos,Programação,109
+Desenvolvimento de jogos,Programação,112
 Clojure,Programação,19
-GoLang,Programação,9
-Linguagem C e C++,Programação,31
-Computação,Programação,60
-Cobol e ABAP,Programação,27
-Sem subcategoria - Programação,Programação,210
-HTML e CSS,Front-end,20
-React,Front-end,2
-Angular,Front-end,2
-JavaScript,Front-end,15
-Frameworks MVC,Front-end,1
-Automação e Performance,Front-end,2
-jQuery,Front-end,3
+GoLang,Programação,8
+Linguagem C e C++,Programação,35
+Computação,Programação,62
+Cobol e ABAP,Programação,30
+Ruby,Programação,17
+Ruby on Rails,Programação,10
+Sem subcategoria - Programação,Programação,216
+HTML e CSS,Front-end,22
+React,Front-end,5
+Angular,Front-end,10
+JavaScript,Front-end,30
+Frameworks MVC,Front-end,2
+Automação e Performance,Front-end,1
+jQuery,Front-end,0
 WordPress,Front-end,14
-Sem subcategoria - Front-end,Front-end,3
-Linux,DevOps,12
-Google Cloud Platform,DevOps,36
-Segurança,DevOps,16
-Containers,DevOps,19
+Sem subcategoria - Front-end,Front-end,0
+Linux,DevOps,10
+Google Cloud Platform,DevOps,37
+Segurança,DevOps,17
+Containers,DevOps,18
 Infraestrutura como Código,DevOps,9
-Builds e Controle de versão,DevOps,6
-Cloud Computing,DevOps,123
+Builds e Controle de versão,DevOps,11
+Cloud Computing,DevOps,128
 Entrega Contínua,DevOps,41
-Mensageria/Streams,DevOps,35
-Internet das coisas,DevOps,12
-Embarcados e Robótica,DevOps,10
-Redes,DevOps,29
+Mensageria/Streams,DevOps,36
+Internet das coisas,DevOps,11
+Embarcados e Robótica,DevOps,9
+Redes,DevOps,28
 CCNA exame 100-105,DevOps,15
-Windows,DevOps,13
-Sem subcategoria - DevOps,DevOps,35
-UI - User Interface,UX & Design,11
-UX - User Experience,UX & Design,25
-Design Gráfico,UX & Design,18
-Edição de Vídeo,UX & Design,17
-3D,UX & Design,8
+Windows,DevOps,14
+Sem subcategoria - DevOps,DevOps,36
+UI - User Interface,UX & Design,12
+UX - User Experience,UX & Design,28
+Design Gráfico,UX & Design,16
+Edição de Vídeo,UX & Design,15
+3D,UX & Design,9
 Motion Design,UX & Design,11
-Design de Jogos,UX & Design,1
-Design de Ilustração,UX & Design,2
-Pintura Digital,UX & Design,5
-Fotografia,UX & Design,4
-Produção e Pós-produção de Áudio,UX & Design,11
-Sem subcategoria - UX & Design,UX & Design,4
-SQL e Banco de Dados,Data Science,16
-Engenharia de Dados,Data Science,1
-Data Science,Data Science,154
+Design de Jogos,UX & Design,2
+Design de Ilustração,UX & Design,3
+Pintura Digital,UX & Design,6
+Fotografia,UX & Design,5
+Produção e Pós-produção de Áudio,UX & Design,12
+Sem subcategoria - UX & Design,UX & Design,3
+SQL e Banco de Dados,Data Science,17
+Engenharia de Dados,Data Science,0
+Data Science,Data Science,161
 Data Visualization,Data Science,0
-Machine Learning,Data Science,176
-Excel,Data Science,34
-Business Intelligence,Data Science,7
-NoSQL,Data Science,16
-Matemática,Data Science,0
-Estatística,Data Science,99
-Sem subcategoria - Data Science,Data Science,82
-Marketing,Marketing Digital,42
-SEO,Marketing Digital,32
-Mídia Paga,Marketing Digital,14
-Conteúdo,Marketing Digital,11
-Social Media,Marketing Digital,15
-Marketing Analytics,Marketing Digital,28
-YouTube,Marketing Digital,1
-Sem subcategoria - Marketing Digital,Marketing Digital,10
-Métodos Ágeis,Inovação & Gestão,81
-Gestão Estratégica,Inovação & Gestão,29
-Gestão Ágil,Inovação & Gestão,25
-Transformação Ágil,Inovação & Gestão,23
-Negociação e Comunicação,Inovação & Gestão,8
-Produtividade e Qualidade de Vida,Inovação & Gestão,15
+Machine Learning,Data Science,181
+Excel,Data Science,26
+Business Intelligence,Data Science,12
+NoSQL,Data Science,17
+Matemática,Data Science,1
+Estatística,Data Science,81
+Sem subcategoria - Data Science,Data Science,84
+Métodos Ágeis,Inovação & Gestão,68
+Marketing,Inovação & Gestão,31
+SEO,Inovação & Gestão,33
+Mídia Paga,Inovação & Gestão,11
+Conteúdo,Inovação & Gestão,8
+Gestão Estratégica,Inovação & Gestão,30
+Gestão Ágil,Inovação & Gestão,26
+Marketing Analytics,Inovação & Gestão,27
+Social Media,Inovação & Gestão,13
+YouTube,Inovação & Gestão,2
+Transformação Ágil,Inovação & Gestão,25
+Negociação e Comunicação,Inovação & Gestão,12
+Produtividade e Qualidade de Vida,Inovação & Gestão,14
 Governança Organizacional,Inovação & Gestão,4
 E-commerce,Inovação & Gestão,28
 Gestão da Qualidade,Inovação & Gestão,12
-Liderança e Gestão de Equipes,Inovação & Gestão,18
+Liderança e Gestão de Equipes,Inovação & Gestão,17
 Habilidades Interpessoais,Inovação & Gestão,9
-Ferramentas de Apoio à Gestão,Inovação & Gestão,25
-Certificação PMP e CAPM,Inovação & Gestão,20
+Ferramentas de Apoio à Gestão,Inovação & Gestão,27
+Certificação PMP e CAPM,Inovação & Gestão,21
 Certificação ITIL Foundation v3,Inovação & Gestão,20
 Certificação ITIL Foundation 4,Inovação & Gestão,0
 COBIT 5 Foundations,Inovação & Gestão,3
-Modelagem e Processos de Negócios,Inovação & Gestão,25
-Gestão de Produtos,Inovação & Gestão,16
-Startups e Empreendedorismo,Inovação & Gestão,16
-Vendas,Inovação & Gestão,24
+Modelagem e Processos de Negócios,Inovação & Gestão,26
+Gestão de Produtos,Inovação & Gestão,17
+Startups e Empreendedorismo,Inovação & Gestão,15
+Vendas,Inovação & Gestão,22
 Práticas de Gestão - Waterfall & Híbridas,Inovação & Gestão,2
-Marketing Pessoal,Inovação & Gestão,13
+Marketing Pessoal,Inovação & Gestão,14
 Conformidade Legal,Inovação & Gestão,0
-Certificações ANBIMA,Inovação & Gestão,16
-Sem subcategoria - Inovação & Gestão,Inovação & Gestão,5
+Certificações ANBIMA,Inovação & Gestão,15
+Sem subcategoria - Inovação & Gestão,Inovação & Gestão,13
