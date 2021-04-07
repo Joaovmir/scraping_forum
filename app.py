@@ -10,7 +10,7 @@ import seaborn as sns
 from urllib.request import urlopen, Request
 from bs4 import BeautifulSoup
 
-@st.cache
+
 def scraping_dados():
     url_api = 'https://cursos.alura.com.br/api/categorias'
     req = requests.get(url_api)
@@ -79,7 +79,6 @@ def scraping_dados():
     # dados.to_csv(os.path.join('dados', 'topicos_sem_resposta.csv'), sep = ',', index = False,encoding='utf-8-sig')
     return dados
 
-@st.cache 
 def carrega_csv():
     dados = pd.read_csv(os.path.join('dados', 'topicos_sem_resposta.csv'), encoding='utf-8-sig')
     return dados
@@ -120,13 +119,12 @@ def mostra_dados(filtro):
         st.dataframe(dados[dados['Área de estudo'] == filtro])
 
 st.title('Scraping Fórum Alura')
-base_dados = st.selectbox('De onde deseja carregar os dados?', ['Usar última base de dados','Realizar novo scraping (2 min carregamento)'])
 
-if base_dados == 'Realizar novo scraping (2 min carregamento)':
+if st.button('Realizar novo scraping'):
     dados = scraping_dados()
     dados.columns = ['Categoria', 'Área de estudo', 'Tópicos sem resposta']
     tabela_areas_estudo = dados.groupby('Área de estudo').sum().sort_values(by='Tópicos sem resposta',ascending=False)
-elif base_dados == 'Usar última base de dados':
+if st.button('Usar última base de dados'):
     dados = carrega_csv()
     dados.columns = ['Categoria', 'Área de estudo', 'Tópicos sem resposta']
     tabela_areas_estudo = dados.groupby('Área de estudo').sum().sort_values(by='Tópicos sem resposta',ascending=False)
