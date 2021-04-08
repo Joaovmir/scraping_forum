@@ -11,14 +11,6 @@ from bs4 import BeautifulSoup
 
 @st.cache
 def scraping_dados():
-    url_api = 'https://cursos.alura.com.br/api/categorias'
-    req = requests.get(url_api)
-    if req.status_code == 200:
-        dados_api = req.json()
-    else:
-        print('Sem resposta!')
-
-    url_alura = 'https://cursos.alura.com.br/forum'
 
     def acessar_url(url):
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36'}
@@ -52,30 +44,39 @@ def scraping_dados():
                 soma_sub = int(tabela_areas_estudo.query(f"area_estudo =='{categoria['nome']}'")['qtd_topicos'])
                 linha['qtd_topicos'] = qtd_topicos - soma_sub
 
-    dados = []
-    for categoria in dados_api:
-        dataframe = []
-        for subcategoria in categoria['subcategorias']:
+    url_api = 'https://cursos.alura.com.br/api/categorias'
+    req = requests.get(url_api)
+    if req.status_code == 200:
+        dados_api = req.json()
+
+        url_alura = 'https://cursos.alura.com.br/forum'
+
+        dados = []
+        for categoria in dados_api:
+            dataframe = []
+            for subcategoria in categoria['subcategorias']:
+                linha = {}
+                linha['categoria'] = subcategoria['nome']
+                linha['area_estudo'] = categoria['nome']
+                url = f"{url_alura}/subcategoria-{subcategoria['slug']}/sem-resposta"
+                soup = acessar_url(url)
+                contagem_topicos('Subcategoria')
+                dataframe.append(linha)
+                dados.append(linha)
+            tabela_areas_estudo = pd.DataFrame(dataframe)
+            tabela_areas_estudo = tabela_areas_estudo.groupby('area_estudo').sum().sort_values(by='qtd_topicos',ascending=False)
             linha = {}
-            linha['categoria'] = subcategoria['nome']
+            linha['categoria'] = f"Sem subcategoria - {categoria['nome']}"
             linha['area_estudo'] = categoria['nome']
-            url = f"{url_alura}/subcategoria-{subcategoria['slug']}/sem-resposta"
+            url = f"{url_alura}/categoria-{categoria['slug']}/sem-resposta"
             soup = acessar_url(url)
-            contagem_topicos('Subcategoria')
-            dataframe.append(linha)
+            contagem_topicos('Área de estudo')
             dados.append(linha)
-        tabela_areas_estudo = pd.DataFrame(dataframe)
-        tabela_areas_estudo = tabela_areas_estudo.groupby('area_estudo').sum().sort_values(by='qtd_topicos',ascending=False)
-        linha = {}
-        linha['categoria'] = f"Sem subcategoria - {categoria['nome']}"
-        linha['area_estudo'] = categoria['nome']
-        url = f"{url_alura}/categoria-{categoria['slug']}/sem-resposta"
-        soup = acessar_url(url)
-        contagem_topicos('Área de estudo')
-        dados.append(linha)
-        
-    dados = pd.DataFrame(dados)
-    return dados
+
+        dados = pd.DataFrame(dados)
+        return dados
+    else:
+        carrega_csv()
 
 @st.cache 
 def carrega_csv():
@@ -84,10 +85,19 @@ def carrega_csv():
 
 def mostra_top(qtd):
     dados.sort_values(by= 'Tópicos sem resposta', ascending=False, inplace=True)
-
+    cores = {
+    'Mobile': 'gold',
+    'Programação': 'mediumseagreen', 
+    'Front-end': 'aquamarine', 
+    'DevOps': 'lightcoral', 
+    'UX & Design': 'violet',
+    'Data Science': 'limegreen', 
+    'Inovação & Gestão': 'orange'
+    }
+    lista_cores = list(dados.replace({'Área de estudo': cores})['Área de estudo'])
     sns.set_style('darkgrid')
     sns.set_context("notebook", font_scale=1.2)
-    ax = sns.barplot(x='Tópicos sem resposta',y= 'Categoria', data = dados.head(qtd))
+    ax = sns.barplot(x='Tópicos sem resposta',y= 'Categoria', data = dados.head(qtd), color = lista_cores[0:qtd])
     ax.figure.set_size_inches(14,6)
     ax.set_title('Subcategorias com mais tópicos sem resposta', fontsize = 18)
     ax.set_xlabel('Quantidade', fontsize = 14)
@@ -97,11 +107,20 @@ def mostra_top(qtd):
 def mostra_top_qtd(qtd):
     st.dataframe(dados.head(qtd))
 
-
 def mostra_areas_estudo():
+    cores = {
+    'Mobile': 'gold',
+    'Programação': 'mediumseagreen', 
+    'Front-end': 'aquamarine', 
+    'DevOps': 'lightcoral', 
+    'UX & Design': 'violet',
+    'Data Science': 'limegreen', 
+    'Inovação & Gestão': 'orange'
+    }
+    lista_cores = list(tabela_areas_estudo.rename(index =  cores).index)
     sns.set_style('darkgrid')
     sns.set_context("notebook", font_scale=1.2)
-    ax = sns.barplot(x='Tópicos sem resposta', y= tabela_areas_estudo.index,  data = tabela_areas_estudo)
+    ax = sns.barplot(x='Tópicos sem resposta', y= tabela_areas_estudo.index,  data = tabela_areas_estudo, color=lista_cores)
     ax.figure.set_size_inches(14,6)
     ax.set_title('Tópicos sem resposta por área de estudo', fontsize = 18)
     ax.set_xlabel('Quantidade', fontsize = 14)
