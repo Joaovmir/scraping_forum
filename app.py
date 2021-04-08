@@ -137,9 +137,9 @@ def mostra_dados(filtro):
         st.dataframe(dados[dados['Área de estudo'] == filtro])
 
 st.title('Scraping Fórum Alura')
-base_dados = st.selectbox('De onde deseja carregar os dados?', ['Usar última base de dados','Realizar novo scraping (2 min carregamento)'])
+base_dados = st.selectbox('De onde deseja carregar os dados?', ['Usar última base de dados','Realizar novo scraping'])
 
-if base_dados == 'Realizar novo scraping (2 min carregamento)':
+if base_dados == 'Realizar novo scraping':
     dados = scraping_dados()
     dados.columns = ['Categoria', 'Área de estudo', 'Tópicos sem resposta']
     tabela_areas_estudo = dados.groupby('Área de estudo').sum().sort_values(by='Tópicos sem resposta',ascending=False)
